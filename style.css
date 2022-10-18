@@ -5,3 +5,56 @@
 html {
   font-size: 10px;
 }
+
+body{
+  width: 600px;
+  height: 600px;
+  margin: 0px;
+  background-color: blue;
+}
+
+.grid{ 
+  border: .5rem solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-items{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid rgb(5, 4, 4);
+  font-size: 2rem;
+  background-color: white;
+}
+
+#box3, #box7, #box10, #box11, #box12, #box15  {
+  border-left: 0.5rem solid black;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11{
+  border-bottom: 00.5rem solid black;
+}
+
+.prompt{
+  position: relative;
+  text-align: top;
+}
+
+.answer{
+  width: 60%;
+  height: 60%;
+}
+
+.special{
+  border: none;
+  font-size: 2rem;
+}
+
+@media (min-width: 475px) {
+  html{
+    font-size: 16px;
+  } 
+}
+
